@@ -1,12 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastrar imovel</title>
-</head>
-<body>
-    <h1>Cadastro imovel aqui</h1>
-    
-</body>
-</html>
+<main class="pagina_cadastro_imovel">
+  <section class="info-panel">
+    <div class="logo">
+      <img src="assets/images/logo_roomatch.png" alt="logo roomatch" />
+    </div>
+
+    <h1>Descreva sua acomodação</h1>
+    <p>
+      Nesta etapa, você deverá escolher o tipo de propriedade que deseja
+      anunciar e indicar se os hóspedes poderão reservar todo o espaço ou apenas
+      um quarto. Depois, informe a localização do imóvel e a capacidade de
+      hospedagem.
+    </p>
+    <div class="icon-circle">
+      <img src="assets/icon/imovel_icon.svg" alt="Ícone de Imóvel" />
+    </div>
+  </section>
+
+  <section class="form-panel">
+    <form>
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input
+          type="text"
+          id="titulo"
+          placeholder="Descreva o título do imovel"
+        />
+      </div>
+      <div class="form-group">
+        <label for="tipo">Tipo do imovel</label>
+        <input type="text" id="tipo" placeholder="Descreva o tipo do imovel" />
+      </div>
+      <div class="form-group">
+        <label for="localizacao">Localizacao</label>
+        <input
+          type="text"
+          id="localizacao"
+          placeholder="Defina a localizacao do imovel"
+        />
+      </div>
+      <div class="form-group">
+        <label for="quantidade">Quantidade de pessoas</label>
+        <input
+          type="text"
+          id="quantidade"
+          placeholder="Defina a quantidade maxima de pessoas"
+        />
+      </div>
+      <div class="form-group">
+        <label for="descricao">Descricao</label>
+        <textarea
+          id="descricao"
+          rows="5"
+          placeholder="Defina uma descricao para o seu imovel"
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn-proximo">Proximo</button>
+    </form>
+  </section>
+</main>
