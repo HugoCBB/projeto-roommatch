@@ -16,15 +16,11 @@
     </div>
   </section>
 
-  <section class="form-panel">
+  <section class="form-panel" id="etapa-1">
     <form>
       <div class="form-group">
         <label for="titulo">Título</label>
-        <input
-          type="text"
-          id="titulo"
-          placeholder="Descreva o título do imovel"
-        />
+        <input type="text" id="titulo" placeholder="Descreva o título do imovel" />
       </div>
       <div class="form-group">
         <label for="tipo">Tipo do imovel</label>
@@ -32,30 +28,71 @@
       </div>
       <div class="form-group">
         <label for="localizacao">Localizacao</label>
-        <input
-          type="text"
-          id="localizacao"
-          placeholder="Defina a localizacao do imovel"
-        />
+        <input type="text" id="localizacao" placeholder="Defina a localizacao do imovel" />
       </div>
       <div class="form-group">
         <label for="quantidade">Quantidade de pessoas</label>
-        <input
-          type="text"
-          id="quantidade"
-          placeholder="Defina a quantidade maxima de pessoas"
-        />
+        <input type="text" id="quantidade" placeholder="Defina a quantidade maxima de pessoas" />
       </div>
       <div class="form-group">
         <label for="descricao">Descricao</label>
-        <textarea
-          id="descricao"
-          rows="5"
-          placeholder="Defina uma descricao para o seu imovel"
-        ></textarea>
+        <textarea id="descricao" rows="5" placeholder="Defina uma descricao para o seu imovel"></textarea>
       </div>
 
-      <button type="submit" class="btn-proximo">Proximo</button>
+      <button type="submit" class="btn-proximo" id="btn-proximo">Proximo</button>
     </form>
+  </section>
+  
+
+  <section class="form-panel is-hidden" id="etapa-2" aria-hidden="false">
+      <div class="content">
+        <div class="tittle">
+          <h3>
+            Imagens da sua acomodacao
+          </h3>
+        </div>
+
+            
+      <div class="gallery">
+
+        <label class="slot" aria-label="Adicionar imagem 1">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+
+        <label class="slot" aria-label="Adicionar imagem 2">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+
+        <label class="slot" aria-label="Adicionar imagem 3">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+
+        <label class="slot" aria-label="Adicionar imagem 4">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+
+        <label class="slot" aria-label="Adicionar imagem 5">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+
+        <label class="slot" aria-label="Adicionar imagem 6">
+          <input type="file" accept="image/*">
+          <img class="slot-icon" src="assets/icon/galeria_icon.png" alt="">
+          <img class="preview" alt="" />
+        </label>
+      </div>
+          
+      <button type="submit" class="btn-voltar">Voltar</button>
+      <button class="btn-proximo" onclick="irPara('/chat')">Publicar</button>
   </section>
 </main>
