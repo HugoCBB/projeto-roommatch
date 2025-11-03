@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter","Poppins", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #629D8A;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left-side {
+    flex: 1;
+    background-color: #fff;
+    color: #629D8A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+.left-side h1 {
+    font-family: "inter", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.left-side .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-icon {
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-icon .ellipse {
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.profile-icon .edit-icon {
+    position: absolute;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.right-side {
+    flex: 0.5;
+    background-color: #629D8A;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-size: 0.9rem;
+    margin-bottom: 3px;
+    text-align: left;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.checkbox input {
+    margin-right: 8px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #fff;
+    color: #629D8A;
+}
+
+.register-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.register-text a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}

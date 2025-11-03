@@ -1,11 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro usuario</title>
-</head>
-<body>
-    <h1>Cadastro usuario aqui</h1>
-</body>
-</html>
+<div class="container">
+  <div class="left-side">
+    <div class="logo">
+      <img src="assets/images/image 1.png" alt="Roommatch" />
+    </div>
+
+    <h1>Criar Conta</h1>
+    <p class="subtitle">Preencha os dados para criar sua conta</p>
+
+    <div class="profile-icon">
+      <img src="assets/images/Ellipse 2.png" alt="Ellipse" class="ellipse" />
+      <img
+        src="assets/images/user-edit.png"
+        alt="user-edit"
+        class="edit-icon"
+      />
+    </div>
+  </div>
+
+  <div class="right-side">
+    <form class="form">
+      <label>Nome</label>
+      <input type="text" placeholder="Seu Nome" required />
+
+      <label>E-mail</label>
+      <input type="email" placeholder="seu@email.com" required />
+
+      <label>Telefone</label>
+      <input type="tel" placeholder="+55 99 99999-9999" required />
+
+      <label>Localização</label>
+      <input type="text" placeholder="Sua Localização, SL" required />
+
+      <label>Senha</label>
+      <input type="password" placeholder="Sua Senha" required />
+
+      <label>Confirmar Senha</label>
+      <input type="password" placeholder="Confirme sua senha" required />
+
+      <div class="checkbox">
+        <input type="checkbox" id="termos" required />
+        <label for="termos"
+          >Aceito os termos de uso e política de privacidade.</label
+        >
+      </div>
+
+      <button type="submit" onclick="irPara('/')">Criar Conta</button>
+
+      <p class="register-text">
+        Já tem uma conta?
+        <a style="cursor: pointer" onclick="irPara('/login')">Fazer login</a>
+      </p>
+    </form>
+  </div>
+</div>

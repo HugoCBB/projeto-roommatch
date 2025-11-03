@@ -1,13 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat</title>
-</head>
-<body>
-    <h1>
-        Chat vem aqui
-    </h1>
-</body>
-</html>
+<div class="app">
+  <aside class="sidebar" aria-label="Lista de contatos">
+    <header class="tabs">
+      <strong
+        ><a style="cursor: pointer" onclick="irPara('/')">Inicio</a></strong
+      >
+      <button id="novoContatoBtn" class="pill" title="Adicionar contato">
+        + match
+      </button>
+    </header>
+    <ul
+      id="contacts"
+      class="contacts"
+      role="listbox"
+      aria-activedescendant=""
+    ></ul>
+  </aside>
+
+  <main class="chat">
+    <header class="chat-header">
+      <button
+        id="toggleSidebar"
+        class="pill only-mobile"
+        aria-label="Abrir contatos"
+      >
+        ☰
+      </button>
+      <div class="peer">
+        <div class="avatar big" id="peerAvatar">?</div>
+        <div>
+          <strong id="peerName">Selecione um contato</strong>
+          <div class="sub" id="peerStatus">—</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <form id="composer" class="composer" autocomplete="off">
+      <input
+        id="messageInput"
+        type="text"
+        placeholder="digite sua mensagem"
+        aria-label="Mensagem"
+      />
+      <button type="submit" title="Enviar">Enviar</button>
+    </form>
+
+    <div id="matchOverlay" class="match-overlay" aria-hidden="true">
+      <div
+        class="match-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="mcName">
+        <img id="mcPhoto" class="mc-photo" src="" alt="Foto do perfil" />
+        <div class="mc-info">
+          <h2 id="mcName">Nome</h2>
+          <p id="mcAge" class="mc-age">0 anos</p>
+          <p id="mcDesc" class="mc-desc">Descrição...</p>
+        </div>
+        <div class="mc-actions">
+          <button
+            id="mcReject"
+            class="mc-btn mc-reject"
+            title="Rejeitar"
+            aria-label="Rejeitar"
+          >
+            ✖
+          </button>
+          <button
+            id="mcAccept"
+            class="mc-btn mc-accept"
+            title="Aceitar"
+            aria-label="Aceitar"
+          >
+            ✔
+          </button>
+        </div>
+        <button id="mcClose" class="mc-close" aria-label="Fechar">×</button>
+      </div>
+    </div>
+  </main>
+</div>
