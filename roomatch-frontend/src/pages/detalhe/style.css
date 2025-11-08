@@ -1,0 +1,173 @@
+
+.logo {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+  height: auto;
+  width: 160px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 30px;
+}
+
+
+.listing-details {
+    flex: 2;
+    min-width: 300px; 
+}
+
+.listing-details h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    overflow-x: auto; 
+    padding-bottom: 5px; 
+    scrollbar-width: none;
+    -ms-overflow-style: none;  
+}
+.gallery img {
+    flex-shrink: 0; 
+    height: 180px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease-in-out; 
+}
+
+.gallery img:first-child {
+    width: 280px; 
+    height: 200px; 
+}
+
+.gallery img:hover {
+    transform: translateY(-3px);
+}
+.description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.description u {
+    text-decoration-color: #ccc;
+    text-decoration-thickness: 1px;
+}
+
+.feedback h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.stars svg {
+    width: 28px;
+    height: 28px;
+    stroke: #d1d1d1;
+    stroke-width: 1.5;
+}
+
+.feedback input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+
+.sidebar {
+    flex: 1;
+    max-width: 320px;
+    min-width: 280px;
+    margin: 0 auto; 
+    background-color: #F5F5F5;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    height: fit-content;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.interest {
+    font-size: 0.9rem;
+    color: #222 ;
+    margin-bottom: 20px;
+}
+
+.filter-box {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden; 
+}
+
+.dropdown-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-field:last-child {
+    border-bottom: none; 
+}
+
+.dropdown-field span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.dropdown-field svg {
+    stroke: #555;
+    stroke-width: 2.5;
+}
+
+.cta-button {
+    width: 100%;
+    background-color: #629d8a; 
+    color: white;
+    border: none;
+    padding: 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #739c90; 
+}

@@ -228,7 +228,7 @@ const pickRandomProfile = () => {
   mcDesc.textContent = currentProfile.desc;
 }
 
-function openMatchOverlay() {
+const openMatchOverlay = () => {
   pickRandomProfile();
   matchOverlay.classList.add("open");
   matchOverlay.setAttribute("aria-hidden", "false");

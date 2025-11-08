@@ -1,0 +1,248 @@
+/* ===== CONFIGURAÇÕES GLOBAIS E VARIÁVEIS ===== */
+:root {
+    --cor-principal: #629D8A;
+    --cor-secundaria: #436359;
+    --cor-texto-claro: #FFFFFF;
+    --cor-texto-escuro: #333333;
+    --cor-fundo-claro: #F0F0F0;
+    --cor-fundo-branco: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+}
+
+.top-header {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto; 
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-header .logo-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.top-header .top-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+}
+
+.top-header .menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-self: end; 
+}
+
+
+.container-wrapper {
+    display: flex;
+}
+
+.content-area {
+    flex: 1; 
+    background-color: var(--cor-fundo-branco);
+}
+
+
+.content-wrapper {
+    max-width: 960px; 
+    margin: 0 auto;  
+    padding: 2rem 1.5rem; 
+}
+
+.profile-sidebar {
+    flex-basis: 400px; 
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    padding: 1.5rem 2.5rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: calc(100vh - 58px); 
+}
+
+
+.property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+}
+
+.property-card {
+    background-color: var(--cor-principal   );
+    border-radius: 15px;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--cor-texto-claro);
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info p {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.card-info p.location {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.card-info .fa-map-marker-alt {
+    margin-right: 0.5rem;
+}
+
+.card-visuals img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--cor-texto-claro);
+}
+
+.bookmark-icon {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--cor-texto-claro);
+    cursor: pointer;
+}
+
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2.5rem;
+}
+
+.loader .dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.loader .spinner-icon {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+}
+
+
+
+.sidebar-logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--cor-texto-claro);
+    width: 100%;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.profile-header {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic-wrapper {
+
+    width: 200px;  
+    height: 200px; 
+    background-color: var(--cor-secundaria);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.profile-header .profile-icon {
+    font-size: 8rem; 
+    color: var(--cor-texto-claro);
+}
+
+.profile-header h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+
+.profile-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+}
+
+.detail-item .icon {
+    font-size: 1.2rem;
+    color: var(--cor-principal);
+    margin-right: 0.75rem;
+}
+
+.detail-item span {
+    flex: 1;
+    text-align: left;
+}
+
+.detail-item .edit-icon {
+    font-size: 1rem;
+    color: var(--cor-principal);
+    cursor: pointer;
+}
+
+.action-button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-fundo-branco);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: var(--cor-principal);
+    border: 1px solid rgb(255, 255, 255);
+
+}

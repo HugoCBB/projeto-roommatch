@@ -1,13 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-<body>
-    <button onclick="irPara('/login')" >Login</button>
-    <a href="#" onclick="irPara('/cadastrar-imovel')"">Imoveis</a>
-    <h1>Inicio aqui</h1>
-</body>
-</html>
+<div class="container">
+  <header>
+    <div class="logo">
+      <img src="assets/images/logo_roomatch.png" alt="" />
+    </div>
+    <div class="header-icons">
+      <div class="icon">
+        <img
+          src="assets/icon/chat_icon.svg"
+          style="width: 30px"
+          onclick="irPara('/chat')"
+        />
+      </div>
+      <div class="icon">
+        <img src="assets/icon/perfil_icon.svg" style="width: 30px" onclick="irPara('/perfil-locatario')"/>
+      </div>
+    </div>
+  </header>
+
+  <p class="caption">
+    Encontre sua moradia ideal dividindo custos com segurança.
+  </p>
+
+  <nav class="pill" aria-label="Filtro principal">
+    <div class="tab">
+      <span class="title">Local</span>
+      <span class="sub">Buscar propriedades</span>
+    </div>
+    <div class="tab">
+      <span class="title">Preferências</span>
+      <span class="sub">Preferências de convivência</span>
+    </div>
+    <div class="tab">
+      <span class="title">Pessoas</span>
+      <span class="sub">moradores da casa</span>
+    </div>
+  </nav>
+
+  <section>
+    <h3>Acomodações recomendadas</h3>
+    <div id="gridAcom" class="grid"></div>
+  </section>
+
+  <section>
+    <h3>Quartos para alugar</h3>
+    <div id="gridQuartos" class="grid"></div>
+  </section>
+</div>
