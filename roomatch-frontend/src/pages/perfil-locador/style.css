@@ -1,4 +1,4 @@
-/* ===== CONFIGURAÇÕES GLOBAIS E VARIÁVEIS ===== */
+
 :root {
     --cor-principal: #629D8A;
     --cor-secundaria: #436359;
@@ -16,6 +16,18 @@
 
 body {
     line-height: 1.6;
+}
+
+.global-logo-container {
+  position: absolute;
+  top: 30px;
+  right: 40px; 
+  z-index: 100;
+}
+
+.global-logo {
+  width: 140px;
+  height: auto;
 }
 
 .top-header {
