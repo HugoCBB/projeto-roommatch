@@ -99,7 +99,14 @@ const router = async () => {
     managePageCSS(route.css)
 
     await loadScript(route.js)
-  } catch (error) {
+
+    const mountFnName = path === '/inicio' ? 'mountInicio'
+                  : path === '/detalhe' ? 'mountDetalhe'
+                  : null;
+
+    if (mountFnName && typeof window[mountFnName] === 'function') window[mountFnName]();
+
+    } catch (error) {
     console.error(error)
     app.innerHTML = '<h1>Erro</h1><p>Não foi possível carregar a página.</p>'
     managePageCSS(null)
@@ -147,14 +154,14 @@ window.database = {
       preco: 'R$2500,00'
     },
 
-    {
-      id: 5,
-      tipo: 'acomodacao',
-      img: 'https://www.quintoandar.com.br/img/1200x800/original894885242-341.478554223613301.jpg',
-      titulo: 'Apartamento em ssa',
-      descricao: 'Excelente apartamento em Salvador, com suíte confortável e climatizada para garantir praticidade e bem-estar no dia a dia. O imóvel conta ainda com lavanderia funcional e ambientes bem planejados. O condomínio oferece uma infraestrutura completa, com piscina, sala de jogos e academia, proporcionando lazer e comodidade para toda a família.',
-      preco: 'R$2500,00'
-    },
+    // {
+    //   id: 5,
+    //   tipo: 'acomodacao',
+    //   img: 'https://www.quintoandar.com.br/img/1200x800/original894885242-341.478554223613301.jpg',
+    //   titulo: 'Apartamento em ssa',
+    //   descricao: 'Excelente apartamento em Salvador, com suíte confortável e climatizada para garantir praticidade e bem-estar no dia a dia. O imóvel conta ainda com lavanderia funcional e ambientes bem planejados. O condomínio oferece uma infraestrutura completa, com piscina, sala de jogos e academia, proporcionando lazer e comodidade para toda a família.',
+    //   preco: 'R$2500,00'
+    // },
 
   ],
   quartos: [
@@ -196,14 +203,14 @@ window.database = {
       preco: 'R$500,00'
     },
 
-    {
-      id: 5,
-      tipo: 'quarto',
-      img: 'https://photos.webquarto.com.br/property_ads/normal/2025-10/36625_ZzHrcT4a1Me3MBEJ.jpg',
-      descricao: 'Quarto bom bonito e barato, no precinho e acessivel a qualquer estudante interessado',
-      titulo: 'quarto em republica',
-      preco: 'R$500,00'
-    },
+    // {
+    //   id: 5,
+    //   tipo: 'quarto',
+    //   img: 'https://photos.webquarto.com.br/property_ads/normal/2025-10/36625_ZzHrcT4a1Me3MBEJ.jpg',
+    //   descricao: 'Quarto bom bonito e barato, no precinho e acessivel a qualquer estudante interessado',
+    //   titulo: 'quarto em republica',
+    //   preco: 'R$500,00'
+    // },
 
   ]
 };
